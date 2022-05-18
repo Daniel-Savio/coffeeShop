@@ -1,0 +1,131 @@
+/* ? ========= FONTE ====== ? */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* ? ====== Variables ===== ? */
+:root{
+
+    /* * Colors * */
+    --header-height:3.5rem;
+    --first-color:#f5a700;
+    --first-clor-alt: #c1801f;
+    --black: #171a1d;
+    --card-color: hsl(0, 0%, 90%);
+    --title-color: hsl(206, 12%, 12%);
+    --text-color: hsl(206, 4%, 42%);
+    --text-color-light: hsl(206, 4%, 97%);
+    --body-color:hsl(206, 4%, 97%);
+    --container-color:#fff;
+
+     /* * Typography * */
+    --body-font: font-family: 'Lato', sans-serif;
+    --biggest:2.25rem;
+    --h1:1.5rem;
+    --h2:1.25rem;
+    --h3:1rem;
+    --text-size: .948rem;
+    --smal-text-size: .814rem;
+    --smaller-text-size: .75rem;
+
+     /* * Typography * */
+     --bold: 700;
+
+      /* * z-index * */
+      --z-tooltip: 10;
+      --z-fixed:100;
+}
+
+@media screen and (min-width: 968px){
+    :root{
+        /* * Typography * */
+        --body-font: font-family: 'Lato', sans-serif;
+        --biggest:3.25rem;
+        --h1:2.25rem;
+        --h2:1.5rem;
+        --h3:1.25rem;
+        --text-size:1rem;
+        --smal-text-size: .875rem;
+        --smaller-text-size: .813rem;
+    }
+    
+}
+
+/* ? General ? */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+   font-family: var(--body-font);
+   font-size: var(--text-size); 
+   background-color: var(--body-color);
+   color: var(--text-color);
+
+}
+h1,h2,h3{
+    color: var(--title-color);
+    font-weight: var(--bold);
+}
+h1,h2,h3,p{
+    line-height: 140%;
+}
+
+h1{
+    font-size: var(--h1);
+}
+h2{
+    font-size: var(--h2);
+}
+h3{
+    font-size: var(--h3);
+}
+ul{
+    list-style-type: none; 
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* ? Commom classes ? */
+
+.container{
+    max-width: 1024px;
+    margin: 0 1.5rem;
+}
+.grid{
+    display: grid;
+    gap:1.5rem;
+}
+.section{
+    padding: 4.5rem 0 2rem;
+}
+
+.section_title{
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+.section_title::before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 3px;
+    height: 20px;
+    background-color: var(--first-color);
+}
+
