@@ -15,7 +15,7 @@
 </head>
 <body>
     <header class="header" id="header">
-        <nav class="nav container">
+        <nav class="nav container" id="nav">
 
             <a href="index.html" class="nav_logo">
                 <img src="./Assets/img/logo.png" alt="Branding" class="nav_logo_img">
@@ -28,18 +28,51 @@
                     <li class="nav_list_item"> <a href="#products" class="nav_item_link">Produtos</a></li>
                     <li class="nva_list_item"> <a href="#about_us"class="nav_item_link">Sobre nós</a></li>
                 </ul>
+
+                <div class="nav_close">
+                    <span class="material-symbols-outlined"> close </span>   
+                </div>
+                 
             </div>
-            <div class="nav_close">
-                <span class="material-symbols-outlined">
-                    close
-                </span>
+            <div class="nav_toggle">
+                <span class="material-symbols-outlined">grid_view</span>
             </div>
+            
 
         </nav>
     </header>
 
     <main>
+        <!-- $ Home $  -->
+        <section class="home grid" id="home">
+            <div class="home_section">
+                <div class="home_content container">
+                    <h1 class="home_title"> Come and chek the best of our products<strong>.</strong></h1>
+                    <p class="home_desc">Just the best for our custumers</p>
 
+                    <div class="home_data">
+                        <div class="home_data_group">
+                            <h2 class="data_number">120k</h2>
+                            <h3 class="data_title">Testimonials</h3>
+                            <p class="data_desc">Testimonial from various customers who trust us</p>
+                        </div>
+
+                        <div class="home_data_group">
+                            <h2 class="data_number">340+</h2>
+                            <h3 class="data_title">Exclusive Products</h3>
+                            <p class="data_desc">Premium preparations with high quality ingredients</p>
+                        </div>
+                    </div>
+
+                    <a href="#speciallity">
+                        <img src="./Assets/img/scroll.png" alt="" class="home_scroll">
+                    </a>
+                        
+                </div>
+            </div>
+            <img src="./Assets/img/home.png" alt="" class="home_img">
+
+        </section>
     </main>
 
     <footer>

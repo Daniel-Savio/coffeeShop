@@ -1,6 +1,6 @@
 /* ? ========= FONTE ====== ? */
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 
 /* ? ====== Variables ===== ? */
 :root{
@@ -13,7 +13,7 @@
     --card-color: hsl(0, 0%, 90%);
     --title-color: hsl(206, 12%, 12%);
     --text-color: hsl(206, 4%, 42%);
-    --text-color-light: hsl(206, 4%, 97%);
+    --text-color-light: hsl(240, 8%, 93%);
     --body-color:hsl(206, 4%, 97%);
     --container-color:#fff;
 
@@ -26,13 +26,11 @@
     --text-size: .948rem;
     --smal-text-size: .814rem;
     --smaller-text-size: .75rem;
-
-     /* * Typography * */
-     --bold: 700;
+    --bold: 700;
 
       /* * z-index * */
-      --z-tooltip: 10;
-      --z-fixed:100;
+    --z-tooltip: 10;
+    --z-fixed:100;
 }
 
 @media screen and (min-width: 968px){
@@ -128,4 +126,112 @@ button{
     height: 20px;
     background-color: var(--first-color);
 }
+
+/* ? ========== Header  =============== ?  */
+
+.header{
+    width: 100%;
+    background: #000;
+    position:fixed;
+    top: 0;
+    z-index: var(--z-fixed);
+
+}
+#nav{
+    max-width: 100%;
+    margin-right: 0;
+    margin-right: 1rem;
+}
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    vertical-align: middle;
+    
+}
+
+.nav_logo, .nav_toggle{
+    color: #fff;
+}
+
+.nav_logo{
+    display: flex;
+    align-items: center;
+   column-gap: .5rem;
+   font-weight: var(--bold);
+   margin-right: auto;
+}
+.nav_list{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.nav_item_link{
+    color: var(--text-color-light);
+    font-size: var(--h3);
+    transition: .15s ;
+
+}
+
+.nav_item_link:hover{
+    border-radius: 1rem;
+    padding: .5rem;
+    color: #fff;
+    border: solid;
+    border-color: var(--first-color);
+}
+.nav_toggle{
+    cursor: pointer;
+    font-size: 1.15rem;
+    display: none;
+}
+.nav_close{
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+    .nav_toggle{
+        display: inline-flex;
+    }
+    .nav_menu{
+        position: fixed;
+        background-color: var(--black);
+        top: 0;
+        right:-100%;
+        width: 100%;
+        height: 100%;
+        transition: .3s all ease-in-out;
+    }
+    .nav_list{
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding-top: 9rem;
+    }
+    .nav_item_link{
+        color: var(--text-color-light);
+        font-size: var(--h2);
+        transition: .15s ;
+    
+    }
+    .nav_item_link:hover{
+        padding: .75rem;  
+    }
+    .nav_close{
+        display: block;
+        cursor: pointer;
+        font-size: 2.5rem;
+        color: #fff;
+        position: absolute;
+        top: 1rem;
+        right:1rem;
+    }
+    .show_menu{
+        right: 0;
+    }
+}
+
+/* ? ========== Home  =============== ?  */
 
