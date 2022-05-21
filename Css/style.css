@@ -36,7 +36,6 @@
 @media screen and (min-width: 968px){
     :root{
         /* * Typography * */
-        --body-font: font-family: 'Lato', sans-serif;
         --biggest:3.25rem;
         --h1:2.25rem;
         --h2:1.5rem;
@@ -59,7 +58,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-   font-family: var(--body-font);
+   font-family: "lato", "sans-serif";
    font-size: var(--text-size); 
    background-color: var(--body-color);
    color: var(--text-color);
@@ -131,7 +130,7 @@ button{
 
 .header{
     width: 100%;
-    background: #000;
+    background: transparent;
     position:fixed;
     top: 0;
     z-index: var(--z-fixed);
@@ -235,3 +234,46 @@ button{
 
 /* ? ========== Home  =============== ?  */
 
+.home{
+    gap: 0;
+}
+.home_section{
+    padding: 7rem 0 2.5rem;
+    background: linear-gradient(160deg ,hsla(206, 5%, 24%, 1) -4%, hsla(206,12%,12%,1) 46%);
+}
+.home_content{
+    position: relative;
+}
+.home_title{
+    font-size: var(--biggest);
+    margin-bottom: 1.5rem;
+    color: var(--text-color-light);
+
+}
+.home_data{
+    border-top: 1px solid var(--text-color-light);
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+.data_number{
+    color: var(--first-color);
+    font-size: var(--h1);
+    margin-bottom: 1.5rem;
+}
+.data_title{
+    font-size: var(--h3);
+    color: var(--text-color-light);
+    margin-bottom: .5rem;
+}
+.home_title strong{
+    color: var(--first-color);
+}
+.home_desc{
+    margin-bottom: 2rem;
+}
+.home_scroll{
+    
+}
