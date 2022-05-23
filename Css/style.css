@@ -136,6 +136,10 @@ button{
     z-index: var(--z-fixed);
 
 }
+.header-scroll{
+    background: var(--black);
+    box-shadow: rgb(7, 7, 7) 0px 20px 30px -10px;
+}
 #nav{
     max-width: 100%;
     margin-right: 0;
@@ -275,5 +279,24 @@ button{
     margin-bottom: 2rem;
 }
 .home_scroll{
-    
+    position: absolute;
+    width: 100px;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: bounce 2s infinite;
+}
+
+
+@keyframes bounce {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }

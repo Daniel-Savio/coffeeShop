@@ -18,3 +18,14 @@ nav_links.forEach((link)=>{
     })
    
 })
+
+// * Change the header background *
+
+const header = document.getElementById("header");
+window.addEventListener("scroll", ()=>{
+    if(this.scrollY >= 50){
+        header.classList.add("header-scroll");
+    }else{
+        header.classList.remove("header-scroll");
+    }
+})
